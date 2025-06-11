@@ -607,10 +607,6 @@ color: #868686;
 
 
 @media screen and (max-width: 1000px) {
-  .column{
-      flex-direction: column;
-      width:80vw;
-  }
   .side{
       display: flex;
   }
@@ -630,6 +626,10 @@ color: #868686;
 }
 
 @media (max-width: 700px) {
+  .column{
+      flex-direction: column;
+      width:80vw;
+  }
   .glider{
     width: 31.5%;
   }
