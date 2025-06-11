@@ -5,36 +5,593 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Elise Yang</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
     <script src="https://kit.fontawesome.com/86d0d34cc4.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <input type = "checkbox" id="check">
-    <label for ="check">
-        <i class = "fas fa-bars" id = "btn"></i>
-        <i class = "fas fa-times" id = "cancel"></i>
-    </label>
-	
-    <div class = "sidebar">
-        <header>Elise Yang</header>
-        <ul>
-            <li><a href="index.html">about/home</a></li>
-            <li><a href="pages/design.html">projects</a></li>
-            <!-- <li><a href="#">page two</a></li>
-            <li><a href="#">page three</a></li> -->
-        </ul>
+
+
+    <div class="row-custom" style="animation: fadeIn 0.75s;">
+
+        <!-- MAIN INFO CARD -->
+        <div class="column left">
+            <div class="container side sticky">
+    
+                <div class="col-custom" style="margin-right: 50px">
+                    <img src="assets/images/Me.JPG" alt="Elise" style = "border-radius: 75px; width:150px; height: 150px; object-fit: cover; animation: fadeIn 3s; ">
+                </div>
+                
+                <div class="col-custom">
+                    <div class="row-custom">
+                        <h1>ELISE YANG</h1>
+                    </div>
+                    <div class="row-custom">
+                        <h2>MechE x CS</h2>
+                    </div>
+                    
+                    <div class="row-custom">
+                        <a href="https://github.com/eliseyangg"><i class = "fa fa-github" id="github" style="padding:5px;"></i></a>
+                        <a href="https://www.linkedin.com/in/elisemyang/"><i class = "fa fa-linkedin" id="linkedin" style="padding:5px;"></i></a>
+                        <a href="mailto:yelise@stanford.edu"><i class = "fa fa-envelope-o" id="mail" style="padding:5px;"></i></a>
+                    </div>
+                </div>
+
+                
+            </div>
+
+        </div>
+        
+        <!-- MAIN CONTENT -->
+       
+        <div class="column right">
+    
+            <!-- TABS -->
+            <div class="tabs sticky">
+                <input type="radio" id="radio-1" name="tabs" checked />
+                <label class="tab active" for="radio-1" data-tab="about">About</label>
+                <input type="radio" id="radio-2" name="tabs" />
+                <label class="tab" for="radio-2" data-tab="experience">Experience</label>
+                <input type="radio" id="radio-3" name="tabs" />
+                <label class="tab" for="radio-3" data-tab="projects">Projects</label>
+                <span class="glider"></span>
+            </div>
+
+            <!-- TAB CONTENT -->
+            <div class="container main">
+
+                <!-----------
+                    ABOUT
+                ------------>
+                <div id="about" class="tab-content active">
+                    <h3>about</h3>
+                    </br>
+                    <p>I am an incoming Mechanical Engineering PhD student at Stanford University with a BS in Mechanical Engineering and a minor in Computer Science from Columbia University.</p>
+                    <p>My interests lie in applying data-driven computational techniques to optimize mechanical engineering processes, including manufacturing, robotics, and automation. 
+                        I aim to further integrate computer science and algorithms to enhance industrial efficiency and innovation.</p>
+                    </br>
+
+                    <a href="mailto:yelise@stanford.edu" class="btn btn-snake"><p></p></a>
+                </div>
+                <!----------------
+                    EXPERIENCE
+                ----------------->
+                <div id="experience" class="tab-content">
+                    <h3>experience</h3>
+                    </br>
+
+                    <div class="title-wrapper">
+                        <h3 class="h3">Education</h3>
+                    </div>
+                    <ol class="timeline-list">
+
+                        <li class="timeline-item">
+                            <div class="timeline-content">
+                                <div class="timeline-item-left">
+                                    <h4 class="h4 timeline-item-title">Ph.D. Mechanical Engineering @ Stanford University</h4>
+                                    <span>Sep 2025 — Present</span>
+                                </div>
+                                <div class="timeline-item-right">
+                                    <a target="_blank" href="https://engineering.stanford.edu/"><img src="assets/images/experiences/stanford.png"/></a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="timeline-item">
+                            <div class="timeline-content">
+                                <div class="timeline-item-left">
+                                    <h4 class="h4 timeline-item-title">B.S. Mechanical Engineering, Minor in Computer Science @ Columbia University</h4>
+                                    <span>Sep 2021 — May 2025</span>
+                                </div>
+                                <div class="timeline-item-right">
+                                    <a target="_blank" href="https://www.engineering.columbia.edu/"><img src="assets/images/experiences/columbia.png"/></a>
+                                </div>
+                            </div>
+                        </li>
+            
+                    </ol>
+
+                    <div class="title-wrapper">
+                        <h3 class="h3">Industry</h3>
+                    </div>
+                    <ol class="timeline-list">
+
+                        <li class="timeline-item">
+
+                            <div class="timeline-content">
+                                <div class="timeline-item-left">
+                                    <h4 class="h4 timeline-item-title">Manufacturing Design Engineer Intern @ Samsara, Global Operations</h4>
+                                    <span>May 2024 — Aug 2024</span>
+                                </div>
+                                <div class="timeline-item-right">
+                                    <a target="_blank" href="https://samsara.com"><img src="assets/images/experiences/samsara.png"/></a>
+                                </div>
+                            </div>
+<!--             
+                            <p class="timeline-text">
+                                Web app creation from backend to frontend for proactive analysis of manufacturing factory capacity and test station data. 
+                            </p> -->
+            
+                        </li>
+                        
+                        <li class="timeline-item">
+
+                            <div class="timeline-content">
+                                <div class="timeline-item-left">
+                                    <h4 class="h4 timeline-item-title">Data Engineer Intern @ Tesla, Cell Manufacturing</h4>
+                                    <span>May 2023 — Aug 2023</span>
+                                </div>
+                                <div class="timeline-item-right">
+                                    <a target="_blank" href="https://tesla.com"><img src="assets/images/experiences/tesla.png"/></a>
+                                </div>
+                            </div>
+            
+                            <!-- <p class="timeline-text">
+                                Automation and optimization of backend manufacturing quality data analysis.
+                            </p> -->
+            
+                        </li>
+            
+                    </ol>
+
+                    <div class="title-wrapper">
+                        <h3 class="h3">Research</h3>
+                    </div>
+                    <ol class="timeline-list">
+
+                        <li class="timeline-item">
+                            <div class="timeline-content">
+                                <div class="timeline-item-left">
+                                    <h4 class="h4 timeline-item-title">Research Assistant @ Columbia, Robotic Manipulation and Mobility Lab</h4>
+                                    <span>Sep 2024 — May 2025</span>
+                                </div>
+                                <div class="timeline-item-right">
+                                    <a target="_blank" href="https://sialab.squarespace.com"><img src="assets/images/experiences/columbia.png"/></a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="timeline-item">
+                            <div class="timeline-content">
+                                <div class="timeline-item-left">
+                                    <h4 class="h4 timeline-item-title">Research Assistant @ Columbia, Sia Lab</h4>
+                                    <span>Jan 2024 — May 2024</span>
+                                </div>
+                                <div class="timeline-item-right">
+                                    <a target="_blank" href="https://sialab.squarespace.com"><img src="assets/images/experiences/sia.png"/></a>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li class="timeline-item">
+                            <div class="timeline-content">
+                                <div class="timeline-item-left">
+                                    <h4 class="h4 timeline-item-title">Research Assistant @ Columbia, Cardiovascular Biomechanics Research Lab</h4>
+                                    <span>May 2022 — Oct 2022</span>
+                                </div>
+                                <div class="timeline-item-right">
+                                    <a target="_blank" href="https://cbrlcolumbia.com/"><img src="assets/images/experiences/cbrl.png"/></a>
+                                </div>
+                            </div>
+                        </li>
+            
+                    </ol>
+
+                </div>
+
+
+                <!--------------
+                    PROJECTS
+                --------------->
+                <div id="projects" class="tab-content">
+                    <h3>projects</h3>
+                    </br>
+                    <p style="color:rgb(212, 120, 120)">This page is under construction.</p>
+                    
+                    <section class="projects">
+                        </br>
+                        <p style="text-transform: uppercase; font-size: 10px; letter-spacing: 2px; font-weight: 500; color: #868686;">inclusive filtering</p>
+                        <span class="filter-categories">
+                            <div class="cat"><span><input type="checkbox" id="filter-all" class="filter-input filter-all" name="filter" checked="checked"/><label for="filter-all" class="filter-label tag-all btn">ALL</label></span></div>
+                            <div class="cat"><span><input type="checkbox" id="dash" class="filter-input" name="filter" /><label for="dash" class="filter-label tag-dash btn">Dash</label></span></div>
+                            <div class="cat"><span><input type="checkbox" id="aiml" class="filter-input" name="filter" /><label for="aiml" class="filter-label tag-aiml btn">AI/ML</label></span></div>
+                            <div class="cat"><span><input type="checkbox" id="research" class="filter-input" name="filter" /><label for="research" class="filter-label tag-research btn">Research</label></span></div>
+                            <div class="cat"><span><input type="checkbox" id="design" class="filter-input" name="filter" /><label for="design" class="filter-label tag-design btn">Design</label></span></div>
+                        </span>
+            
+                        <div class="filter-wrap">
+
+                            <!------------------------------------------ SUDOKU SOLVER ------------------------------------------>
+                            <div class="filter-item card--1 dash aiml">
+                                <div class="card__info-hover"></div>
+                                <div class="card__img"></div>
+                                <a href="#modal-sudoku" class="card_link" data-toggle="modal" data="#modal-sudoku" data-backdrop="false">
+                                    <div class="card__img--hover"></div>
+                                </a>
+                                <div class="card__info">
+                                    <h3 class="card__title">Sudoku Solver</h3>
+                                    <ul>
+                                        <li class="filter-label tag-dash">Dash</li>
+                                        <li class="filter-label tag-aiml">AI/ML</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="modal-sudoku" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Sudoku Solver</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>AI sudoku solver embedded into a Dash App.</p>
+                                        <iframe class="modal-iframe" src="https://sudoku-solver-a6zn.onrender.com/"></iframe>
+                                    </div>
+                                    <div class="modal-footer">
+                                    <a target="_blank" href="https://sudoku-solver-a6zn.onrender.com/"><button type="button" class="btn">open in new tab</button></a>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+
+                            <!------------------------------------------ Subway ------------------------------------------>
+                            <div class="filter-item card--mta dash">
+                                <div class="card__info-hover"></div>
+                                <div class="card__img"></div>
+                                <a href="#modal-subway" class="card_link" data-toggle="modal" data="#modal-subway" data-backdrop="false">
+                                    <div class="card__img--hover"></div>
+                                </a>
+                                <div class="card__info">
+                                    <h3 class="card__title">NYC Subway Dash App</h3>
+                                    <ul>
+                                        <li class="filter-label tag-dash">Dash</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="modal-subway" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">NYC Subway Dash App</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Releasing soon. Real-time MTA Subway data embedded into a Dash App.</p>
+                                        <iframe class="modal-iframe" src=""></iframe>
+                                    </div>
+                                    <div class="modal-footer">
+                                    <a target="_blank" href=""><button type="button" class="btn">open in new tab</button></a>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+
+                            <!------------------------------------------ Factory Utilization Optimization ------------------------------------------>
+                            <div class="filter-item card--factory dash aiml">
+                                <div class="card__info-hover"></div>
+                                <div class="card__img"></div>
+                                <a href="#modal-factory" class="card_link" data-toggle="modal" data="#modal-factory" data-backdrop="false">
+                                    <div class="card__img--hover"></div>
+                                </a>
+                                <div class="card__info">
+                                    <h3 class="card__title">Factory Utilization Optimization</h3>
+                                    <ul>
+                                        <li class="filter-label tag-dash">Dash</li>
+                                        <li class="filter-label tag-aiml">AI/ML</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="modal-factory" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Factory Utilization Optimization</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Releasing soon. Calculate the most viable distribution of factory work to meet maximum demand coverage given the supply of SKUs, demand of SKUs, and capacity of factories.</p>
+                                        <iframe class="modal-iframe" src=""></iframe>
+                                    </div>
+                                    <div class="modal-footer">
+                                    <a target="_blank" href=""><button type="button" class="btn">open in new tab</button></a>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+
+                            <!------------------------------------------ EDUCATIONAL TOY ------------------------------------------>
+                             <div class="filter-item card--toy design">
+                                <div class="card__info-hover"></div>
+                                <div class="card__img"></div>
+                                <a href="#modal-toy" class="card_link" data-toggle="modal" data="#modal-toy" data-backdrop="false">
+                                    <div class="card__img--hover"></div>
+                                </a>
+                                <div class="card__info">
+                                    <h3 class="card__title">Educational Toy</h3>
+                                    <ul>
+                                        <li class="filter-label tag-design">Design</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="modal-toy" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Educational Addition & Subtraction Toy</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>CAD model.</p>
+                                        <iframe class="modal-iframe" src="https://sudoku-solver-a6zn.onrender.com/"></iframe>
+                                    </div>
+                                    <div class="modal-footer">
+                                    <a target="_blank" href="https://sudoku-solver-a6zn.onrender.com/"><button type="button" class="btn">open in new tab</button></a>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+
+                            <!------------------------------------------ GARBAGE TRUCK CAD ------------------------------------------>
+                            <div class="filter-item card--truck design">
+                                <div class="card__info-hover"></div>
+                                <div class="card__img"></div>
+                                <a href="#modal-truck" class="card_link" data-toggle="modal" data="#modal-truck" data-backdrop="false">
+                                    <div class="card__img--hover"></div>
+                                </a>
+                                <div class="card__info">
+                                    <h3 class="card__title">Toy Garbage Truck CAD</h3>
+                                    <ul>
+                                        <li class="filter-label tag-design">Design</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="modal-truck" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Toy Garbage Truck CAD Model</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <!-- <p>CAD model.</p> -->
+                                        <!-- <iframe class="modal-iframe" src="pages/projects/truck.html"></iframe> -->
+                                    </div>
+                                    <div class="modal-footer">
+                                    <a target="_blank" href="pages/projects/truck.html"><button type="button" class="btn">open in new tab</button></a>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+
+                            <!------------------------------------------ AoA Research ------------------------------------------>
+
+                            <div class="filter-item card--1 research">
+                                <div class="card__info-hover"></div>
+                                <div class="card__img"></div>
+                                <a href="#modal-aoa" class="card_link" data-toggle="modal" data="#modal-aoa" data-backdrop="false">
+                                    <div class="card__img--hover"></div>
+                                </a>
+                                <div class="card__info">
+                                    <h3 class="card__title">Columbia Research Symposium Poster: Aortic Root Aneurysm Research</h3>
+                                    <ul>
+                                        <li class="filter-label tag-research">Research</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="modal-aoa" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Aortic Root Aneurysm Research</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Patient-specific aortic root aneurysm analysis.</p>
+                                        <object data="../assets/Poster_Elise_Yang.pdf" type="application/pdf" width="100%" height="100%"></object>
+                                        <!-- <iframe class="modal-iframe" src="https://sudoku-solver-a6zn.onrender.com/"></iframe> -->
+                                    </div>
+                                    <div class="modal-footer">
+                                    <a target="_blank" href="../assets/Poster_Elise_Yang.pdf"><button type="button" class="btn">open in new tab</button></a>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+
+                            <!------------------------------------------ Exoplanet ------------------------------------------>
+
+                            <div class="filter-item card--exo research">
+                                <div class="card__info-hover"></div>
+                                <div class="card__img"></div>
+                                <a href="#modal-exo" class="card_link" data-toggle="modal" data="#modal-exo" data-backdrop="false">
+                                    <div class="card__img--hover"></div>
+                                </a>
+                                <div class="card__info">
+                                    <h3 class="card__title">JAAVSO Publication: Qatar-1b Star System Research</h3>
+                                    <ul>
+                                        <li class="filter-label tag-research">Research</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="modal-exo" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Analyzing Transit Timing Variations of Qatar-1b</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>This study investigates 13 transits of Qatar-1b from archival data collected using 6-inch telescopes in the
+                                            MicroObservatory network. The purpose of this transit analysis was to update transit midpoints of Qatar-1b to maintain the
+                                            ephemeris. Additionally, the study sought to uncover trends in the transit data, which could provide more information about the
+                                            exoplanet. In order to achieve this goal, the EXOplanet Transit Interpretation Code (EXOTIC) pipeline was used to process these
+                                            transits and generate light curves, which were contributed to the American Association of Variable Star Observers (AAVSO)
+                                            Exoplanet Database. The analysis of the data did not indicate the presence of other planets in the system. This study contributes
+                                            observations of the star system Qatar-1b and supports the current ephemeris of this planet.</p>
+                                        <iframe class="modal-iframe" src="https://apps.aavso.org/media/jaavso/3738_bvMnB1j.pdf"></iframe>
+                                    </div>
+                                    <div class="modal-footer">
+                                    <a target="_blank" href="https://apps.aavso.org/jaavso/article/3738/"><button type="button" class="btn">open in new tab</button></a>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+
+                             <!------------------------------------------ TGF ------------------------------------------>
+
+                             <div class="filter-item card--tgf research">
+                                <div class="card__info-hover"></div>
+                                <div class="card__img"></div>
+                                <a href="#modal-tgf" class="card_link" data-toggle="modal" data="#modal-tgf" data-backdrop="false">
+                                    <div class="card__img--hover"></div>
+                                </a>
+                                <div class="card__info">
+                                    <h3 class="card__title">AGU Fall Meeting Poster: Terrestrial Gamma-Ray Flashes</h3>
+                                    <ul>
+                                        <li class="filter-label tag-research">Research</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="modal-tgf" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Quantifying High Probability Deployment Sites for Downward Terrestrial Gamma Ray Flash Observations</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Locate potential sites to deploy six ground detection terrestrial gamma ray flash instruments. Developed a python script to overlay data correlating with high terrestrial gamma ray flash occurences. Generated topographical visualizations across the globe that quantify terrestrial gamma ray flash "hotspots." Presented findings at the 2020 American Geophysical Fall Meeting.</p>
+                                        <iframe class="modal-iframe" src="https://agu2020fallmeeting-agu.ipostersessions.com/Default.aspx?s=AD-9C-21-A7-F7-34-D5-7D-3A-58-A0-6A-7C-FE-5B-31&pdfprint=true&guestview=true"></iframe>
+                                    </div>
+                                    <div class="modal-footer">
+                                    <a target="_blank" href="https://agu2020fallmeeting-agu.ipostersessions.com/default.aspx?s=AD-9C-21-A7-F7-34-D5-7D-3A-58-A0-6A-7C-FE-5B-31&guestview=true"><button type="button" class="btn">open in new tab</button></a>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+
+
+                            <!------------------------------------------ Site ------------------------------------------>
+                            <div class="filter-item card--site">
+                                <div class="card__info-hover"></div>
+                                <div class="card__img"></div>
+                                <a href="#modal-site" class="card_link" data-toggle="modal" data="#modal-site" data-backdrop="false">
+                                    <div class="card__img--hover"></div>
+                                </a>
+                                <div class="card__info">
+                                    <h3 class="card__title">Personal Website</h3>
+                                    <ul>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="modal-site" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">This Website</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Personal website built from scratch using HTML, CSS, and JavaScript.</p>
+                                        <iframe class="modal-iframe" src="#"></iframe>
+                                    </div>
+                                    <div class="modal-footer">
+                                    <a target="_blank" href="#"><button type="button" class="btn">open in new tab</button></a>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+                            <div class="filter-no-item">Sorry, no items match your filter selection(s).</div>
+                        
+                        
+                        
+                        </div>
+
+                            
+              
+                    </section>
+
+
+
+
+
+                </div>
+
+            </div>
+    
+        </div>
+
+        
+
     </div>
 
-    <h1 style="margin:auto;margin-top: 2.5rem;">Elise Yang
-    </h1>
-    </br></br></br></br>
 
-    <img src="assets/images/Elise.jpg" alt="Girl in a jacket" style="width:15%; margin:auto;">
-    <br>
-    <h1 style = "margin:auto;">
-      <a href="https://www.linkedin.com/in/elisemyang/"><i class = "fa fa-linkedin" id="linkedin"></i></a>
-      &nbsp;
-      <a href="mailto:ey2319@columbia.edu"><i class = "fa fa-envelope-o" id="instagram"></i></a>
-    </h1>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/project-filter.js"></script>
   </body>
 </html>
