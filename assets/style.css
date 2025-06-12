@@ -14,7 +14,7 @@
 body {
     font-family: "Inter", sans-serif;
     color: var(--primary-color);
-    background-color: rgb(255, 255, 255); /* RGBA color format */
+    background-color: rgb(255, 255, 255);
     margin: 10vw;
 }
 
@@ -52,7 +52,7 @@ h3 {
 
 p {
   color: var(--primary-color);
-  font-weight: 200;
+  font-weight: 100;
   font-size: 16px;
   text-align: left;
 }
@@ -258,6 +258,10 @@ input[id="radio-3"]:checked ~ .glider {
   to {
     transform: translate(-50%, -50%) scale(1.4) rotate(1turn);
   }
+}
+
+.btn-snake:hover::before {
+  animation-duration: 1s; 
 }
 
 /* EXPERIENCE */
@@ -617,15 +621,12 @@ color: #868686;
       position:relative;
   }
   .right{
-      padding-left:5px;
-  }
-  .filter-item{
-      width: 48%;
+      padding-left:0px;
   }
 
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
   .column{
       flex-direction: column;
       width:80vw;
@@ -633,7 +634,38 @@ color: #868686;
   .glider{
     width: 31.5%;
   }
-  .filter-item{
-    width: 98%;
+
+  html {
+    font-size: 0.8em;
   }
+
+  .tabs {
+    height: 5.4em;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 14px;
+  }
+  h3 {
+    font-size: 36px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 375px) {
+  html {
+    width: 375px;
+    overflow-x: auto;
+  }
+  .glider{
+    width: 31%;
+  }
+  .side, .main, .tabs, .container{
+    width:300px;
+  }
+  
 }
