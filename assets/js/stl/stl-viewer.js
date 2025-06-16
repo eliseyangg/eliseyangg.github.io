@@ -1,7 +1,7 @@
-import * as THREE from 'three';
-import { STLLoader } from 'three/addons/loaders/STLLoader.js'
-import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-import { Matrix4 } from 'three';
+import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.module.js';
+import { STLLoader } from 'https://cdn.jsdelivr.net/npm/three@0.152.2/examples/jsm/loaders/STLLoader.js'
+import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.152.2/examples/jsm/controls/OrbitControls.js';
+import { Matrix4 } from 'https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.module.js';
 
 console.log('begin of js') 
 
@@ -30,8 +30,7 @@ function STLViewer(model, elementID, color) {
     var scene = new THREE.Scene();
     scene.add(new THREE.HemisphereLight(0xffffff, 1.5));
     (new STLLoader()).load(model, function (geometry) {
-    console.log('Geometry object:', geometry);
-    console.log('Model loaded successfully:', geometry);
+
     var material = new THREE.MeshPhongMaterial({ 
         color: color, 
         specular: 100, 
@@ -61,6 +60,3 @@ function STLViewer(model, elementID, color) {
 }
 
 window.STLViewer = STLViewer;
-
-
-console.log('Script loaded');
