@@ -457,7 +457,7 @@ ol {
 
 
 .card--1 .card__img, .card--1 .card__img--hover {
-  background-image: url('images/projects/sudoku-solver.png');
+  background-image: url('/images/projects/sudoku-solver.png');
 }
 
 .card--2 .card__img, .card--2 .card__img--hover {
@@ -465,31 +465,31 @@ ol {
 }
 
 .card--site .card__img, .card--site .card__img--hover {
-  background-image: url('images/projects/site.png');
+  background-image: url('/images/projects/site.png');
 }
 
 .card--exo .card__img, .card--exo .card__img--hover {
-  background-image: url('images/projects/qatar.png');
+  background-image: url('/images/projects/qatar.png');
 }
 
 .card--tgf .card__img, .card--tgf .card__img--hover {
-  background-image: url('images/projects/tgf.png');
+  background-image: url('/images/projects/tgf.png');
 }
 
 .card--mta .card__img, .card--mta .card__img--hover {
-  background-image: url('images/projects/mta.png');
+  background-image: url('/images/projects/mta.png');
 }
 
 .card--factory .card__img, .card--factory .card__img--hover {
-  background-image: url('images/projects/factory.png');
+  background-image: url('/images/projects/factory.png');
 }
 
 .card--toy .card__img, .card--toy .card__img--hover {
-  background-image: url('images/projects/factoytory.png');
+  background-image: url('/images/projects/factoytory.png');
 }
 
 .card--truck .card__img, .card--truck .card__img--hover {
-  background-image: url('images/projects/truck.png');
+  background-image: url('/images/projects/truck.png');
 }
 
 .card__img {
