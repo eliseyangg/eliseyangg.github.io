@@ -112,6 +112,7 @@ a:active { text-decoration: none; transition: all .5s ease;}
 }
 .main{
     width: 53vw;
+    margin-top: clamp(16px, 2vw, 20px);
 }
 
 .row-custom{
@@ -258,10 +259,6 @@ input[id="radio-3"]:checked ~ .glider {
   to {
     transform: translate(-50%, -50%) scale(1.4) rotate(1turn);
   }
-}
-
-.btn-snake:hover::before {
-  animation-duration: 1s; 
 }
 
 /* EXPERIENCE */
